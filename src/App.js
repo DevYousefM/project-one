@@ -6,7 +6,6 @@ import ExpectedParts from "./components/expectedParts";
 import Home from "./components/home";
 import InventoryList from "./components/inventoryList";
 import Invoices from "./components/invoices";
-import Issueables from "./components/Issueables";
 import JopCards from "./components/jopCards";
 import Navbar from "./components/navbar";
 import Payments from "./components/payments";
