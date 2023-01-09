@@ -1,0 +1,22 @@
+.homecard {
+  @apply h-fit bg-white w-[47%] mb-6 shadow p-6 flex flex-col rounded-lg border-t border-green-500;
+  @apply mobile-l:w-[100%] mobile-l:mb-4 shadow mobile-l:p-4;
+}
+.homecard > h3 {
+  @apply text-gray-700 text-base mb-2 font-semibold;
+}
+.homecard strong {
+  @apply text-2xl text-gray-700 font-semibold;
+}
+.homecard span {
+  @apply font-normal mt-2 flex items-center;
+}
+.homecard > label {
+  @apply text-gray-500 text-sm;
+}
+.homelarge {
+  @apply bg-white w-full  mb-6 shadow p-6 flex flex-col rounded-lg border-t border-green-500;
+}
+.homelarge > h3 {
+  @apply text-gray-700 text-base mb-2 font-semibold;
+}

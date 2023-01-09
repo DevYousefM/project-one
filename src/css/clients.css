@@ -1,0 +1,64 @@
+.dropdown {
+  position: relative;
+}
+.dropdown::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  border: solid rgba(0, 0, 0, 0.8);
+  border-width: 0 0.5px 0.5px 0;
+  display: inline-block;
+  padding: 2.7px;
+  transform: rotate(45deg) translateX(-75%);
+}
+.client-th {
+  @apply text-start py-2 text-slate-400 font-semibold relative;
+}
+.clients-td {
+  @apply py-2 font-normal text-sm;
+}
+#hash {
+  @apply text-start py-2 text-slate-400 font-semibold relative;
+}
+.client-th::after,
+#hash::after {
+  content: "\2191";
+  position: absolute;
+  right: 20px;
+}
+.client-th::before,
+#hash::before {
+  content: "\2193";
+  position: absolute;
+  right: 15px;
+}
+#hash::after {
+  right: 10px;
+}
+#hash::before {
+  right: 5px;
+}
+.details .status {
+  @apply relative font-semibold py-1 rounded-full bg-green-100 w-[75%] pr-5 text-right;
+  @apply before:absolute before:content-[""] before:bg-green-700 before:w-2 before:h-2 before:rounded-full;
+  @apply before:left-4 before:top-[55%] before:-translate-y-2/4;
+}
+.projects .status {
+  @apply relative text-sm font-semibold py-1 rounded-full w-[80%] pr-5 text-right;
+  @apply before:absolute before:content-[""] before:w-2 before:h-2 before:rounded-full;
+  @apply before:left-4 before:top-[55%] before:-translate-y-2/4;
+}
+.jopcards .status {
+  @apply relative text-sm font-semibold py-1 rounded-full pr-5 text-right;
+  @apply before:absolute before:content-[""]  before:w-2 before:h-2 before:rounded-full;
+  @apply before:left-4 before:top-[55%] before:-translate-y-2/4;
+}
+.invoices .status {
+  @apply relative w-fit text-sm font-semibold py-1 rounded-full pl-8 pr-5 text-right;
+  @apply before:absolute before:content-[""]  before:w-2 before:h-2 before:rounded-full;
+  @apply before:left-4 before:top-[55%] before:-translate-y-2/4;
+}
+.active {
+  @apply bg-bg-main text-white hover:bg-bg-main;
+}

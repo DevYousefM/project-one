@@ -1,0 +1,3 @@
+.activeNav {
+  @apply border-b-[3px] border-color-main;
+}
