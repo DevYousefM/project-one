@@ -43,7 +43,6 @@ function App() {
               <Route path="/unpaid-parts" element={<UnpaidParts />} />
               <Route path="/team" element={<Team />} />
               <Route path="/inventory-list" element={<InventoryList />} />
-              <Route path="/issueables" element={<Issueables />} />
             </Route>
           </Routes>
         </BrowserRouter>
